@@ -2,6 +2,8 @@
 @import "global";
 @import "fonts";
 
+/********************   H E A D E R   ********************/
+
 .header {
 
    &__top-inner {
@@ -10,6 +12,7 @@
       justify-content: space-between;
       align-items: center;
    }
+   
    &__text {
       margin-left: auto;
       margin-right: 90px;
@@ -17,7 +20,8 @@
          color: $red;
       }
    }
-    &__btn {
+    
+   &__btn {
       width: 72px;
       font-size: 12px;
       line-height: 24px;
@@ -41,19 +45,21 @@
       background-color: $bg;
    }
 }
-.basket {}
-
 .menu {
    height: 60px;
    display: flex;
    align-items: center;
+   
    &__list {
-       li{
+       
+      li{
           display: inline-block;
+          
           & + li{
              margin-left: 37px;
           }
        }
+       
        a{
           font-size: 14px;
           font-family: 'Roboto', sans-serif;
@@ -63,3 +69,65 @@
        }
    }
 }
+
+
+/********************   S E A R C H   ********************/
+
+.search {
+   min-height: 532px;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+
+		&__inner {
+         padding: 158px 0px 100px;
+         text-align: center;
+         color: #fff;
+		}
+
+		&__inner-title {
+         font-size: 48px;
+         font-weight: 700;
+         line-height: 72px;
+         margin-bottom: 20px;
+		}
+
+		&__inner-text {
+         font-size: 20px;
+         font-weight: 500;
+         line-height: 30px;
+         margin-bottom: 53px;
+		}
+
+		&__inner-form {
+         max-width: 670px;
+         margin: 0 auto;
+         position: relative;
+         input{
+            width: 100%;
+            height: 56px;
+            display: block;
+            box-shadow: 0px 1px 10px 0px rgba(124, 178, 64, 0.75);
+            border-radius: 4px;
+            border: none;
+            font-size: 14px;
+            font-weight: 500;
+            padding-left: 25px;
+            padding-right: 60px;
+            letter-spacing: 0.5px;
+            &::placeholder{
+               color: #90a4ae;
+               
+               font-weight: 500;
+            }
+         }
+         button{
+            position: absolute;
+            background-color: transparent;
+            border: none;
+            top: 19px;
+            right: -64px;
+         }
+		}
+}
+
