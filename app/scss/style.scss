@@ -237,6 +237,7 @@
 		}
 
 		&__item-author {
+         max-width: 245px;
          display: flex;
          align-items: center;
 
@@ -260,9 +261,12 @@
 		}
 
 		&__item-star {
+
+         span {
          font-size: 12px;
          font-weight: 400;
          color: $bg;
+         }
 		}
 }
 
@@ -288,6 +292,42 @@
       &.mixitup-control-active {
          background-color: $red;
          color: #fff;
+      }
+   }
+}
+
+
+/********************   P R O D U C T  S L I D E R   ********************/
+
+.product-slider {
+   padding: 110px 0px 120px;
+
+   .slick-dots {
+      text-align: center;
+      margin-top: 37px;
+
+      li {
+         display: inline-block;
+         margin-left: 4px;
+         margin-right: 4px;
+
+         &.slick-active {
+
+            button {
+               background-color: $green;
+            }
+         }
+         
+         button {
+            width: 16px;
+            height: 16px;
+            font-size: 0;
+            border-radius: 50%;
+            border: none;
+            background-color: #e8e8e8;
+            outline: none;
+            cursor: pointer;
+         }
       }
    }
 }
