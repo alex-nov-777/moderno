@@ -461,3 +461,39 @@
          padding: 15px 40px;
 		}
 }
+
+
+/********************   T U T O R I A L   ********************/
+
+.tutorial {
+   padding: 60px 0px 120px;
+
+		&__inner {
+         display: flex;
+         justify-content: space-between;
+		}
+
+		&__item {
+         max-width: 370px;
+         width: 100%;
+		}
+
+		&__item-images {
+         display: block;
+         min-height: 270px;
+         background-repeat: no-repeat;
+         background-position: center;
+         background-size: cover;
+		}
+
+		&__item-title {
+         display: block;
+         font-size: 24px;
+         @include f700;
+         line-height: 40px;
+         text-align: center;
+         color: $bg;
+         background-color: #f8f8f8;
+         padding: 30px 10px;
+		}
+}
