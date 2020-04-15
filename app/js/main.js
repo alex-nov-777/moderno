@@ -35,7 +35,18 @@ $(function(){
 
    });
 
-   
+   $(".header__menu-burger").click(function (event) {
+      $(".header__menu-burger,.menu__list").toggleClass("active");
+      $("body").toggleClass("lock");
+   });
+
+   $('.header__menu-burger').on('click', function(){
+      $('.menu__list').slideToggle();
+   });
+
+   $('.header__btn-menu').on('click', function () {
+      $('.header__box').toggleClass('active');
+   });
 
    var mixer = mixitup('.products__inner-box');
 
