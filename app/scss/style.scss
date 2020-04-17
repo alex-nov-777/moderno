@@ -408,6 +408,124 @@
    display: none;
 }
 
+/********************   M O D A L   ********************/
+
+#modal {
+   max-width: 730px;
+   width: 100%;
+   background-color: $green;
+   padding: 92px 0px 110px;
+}
+
+.login__title {
+   font-size: 48px;
+   @include f700;
+   text-align: center;
+   text-transform: uppercase;
+   color: #fff;
+   margin-bottom: 42px;
+}
+
+.login__inner {
+   form {
+      max-width: 400px;
+      margin: 0 auto;
+
+      label {
+         position: relative;
+         display: block;
+         width: 100%;
+
+         &::before {
+            font-family: "icomoon";
+            position: absolute;
+            font-size: 14px;
+            color: #fff;
+            top: 50%;
+            left: 18px;
+            transform: translateY(-50%);
+         }
+      }
+
+      .login__label-name::before {
+         content: "\f007";
+      }
+
+      .login__label-pass::before {
+         content: "\f023";
+      }
+
+      input {
+         display: block;
+         width: 100%;
+         height: 43px;
+         font-size: 14px;
+         margin-bottom: 8px;
+         border: none;
+         background-color: #76ae36;
+         color: #fff;
+         padding-left: 40px;
+
+         &::placeholder {
+            font-size: 14px;
+            color: #fff;
+         }
+      }
+
+      button {
+         max-width: 140px;
+         width: 100%;
+         font-size: 14px;
+         @include f700;
+         text-align: center;
+         text-transform: uppercase;
+         border: none;
+         color: #000;
+         background-color: #fff;
+         box-shadow: 0px 2px 2px 0px rgba(118, 174, 54, 0.75);
+         padding: 18px 0px 16px;
+         outline: none;
+         margin-right: 10px;
+         cursor: pointer;
+      }
+
+      .creat-acc {
+         max-width: 245px;
+         width: 100%;
+         font-size: 18px;
+         text-align: center;
+         color: #fff;
+         background-color: #76ae36;
+         padding: 15px 0px 15px 38px;
+         margin-top: 20px;
+         position: relative;
+
+         &::before {
+            content: "\f044";
+            font-family: "icomoon";
+            position: absolute;
+            font-size: 18px;
+            color: #fff;
+            top: 25px;
+            left: 36px;
+            transform: translateY(-50%);
+         }
+      }
+
+      .lost-pass {
+         display: block;
+         font-size: 18px;
+         color: #fff;
+         margin-top: 20px;
+      }
+   }
+}
+
+.fancybox-button svg {
+   color: #fff;
+   @include f700;
+}
+
 /********************   H E A D E R __ M E N U - B U R G E R   ********************/
 
 .header__menu-burger {
@@ -1705,7 +1823,7 @@
          }
       }
 
-      .tab_content {
+      .tab__content {
          border: 1px solid #d7d7d7;
          border-top: none;
          background-color: #fff;
@@ -1809,7 +1927,6 @@
 /********************   P R O D U C T - O N E __ A S I D E   ********************/
 
 .product-one {
-
    &__price {
       button {
          width: 100%;
@@ -1838,20 +1955,19 @@
    }
 }
 
-.icon-heart-o {
-   background-color: $green;
-}
-
-.icon-shopping-cart {
+.price__product-blue {
    background-color: #42a5f5;
 }
 
-.prict__product-btn {
+.price__product-green {
+   background-color: $green;
+}
+
+.price__product-grey {
    background-color: $text;
 }
 
 .aside {
-
    &__item-sales {
       padding-top: 24px;
       font-size: 16px;
@@ -1865,9 +1981,9 @@
          margin-right: 15px;
          position: relative;
 
-         &::before{
+         &::before {
             content: "\f07a";
-            font-family: 'icomoon';
+            font-family: "icomoon";
             position: absolute;
             color: #a6b5bb;
             top: 0;
@@ -1882,7 +1998,6 @@
 }
 
 .price {
-
    &__box {
       display: flex;
       justify-content: space-between;
@@ -1890,7 +2005,6 @@
    }
 }
 .prict {
-
    &__product {
       font-size: 22px;
       @include f500;
@@ -1898,7 +2012,6 @@
    }
 }
 .product-autchor {
-
    &__box {
       display: flex;
       align-items: center;
@@ -1906,7 +2019,6 @@
    }
 }
 .autchor {
-
    &__avatar {
       width: 73px;
       height: 63px;
@@ -1927,7 +2039,6 @@
    }
 
    &__awards-list {
-
       li {
          display: inline-block;
          font-size: 20px;
@@ -1949,7 +2060,7 @@
    }
 }
 
-.icon-meh-o{
+.icon-meh-o {
    width: 34px;
    height: 37px;
    background-image: url("../images/awards/awards-order1.png");
@@ -1976,13 +2087,12 @@
 .icon-yen {
    width: 34px;
    height: 37px;
-   background-image: url("../images/awards/awards-order5.png");   
+   background-image: url("../images/awards/awards-order5.png");
 }
 
 .information {
-   
    &__line-box {
-      padding-top: 15px
+      padding-top: 15px;
    }
 
    &__line {
@@ -1996,8 +2106,148 @@
          @include f500;
          color: $bg;
       }
-   }   
+   }
 }
+
+
+/********************   P A G E - 4 0 4   ********************/
+
+.page-404 {
+   &__wrapper {
+      border: 1px solid #dcdcdc;
+      background-color: #fff;
+      margin-bottom: 150px;
+   }
+
+   &__head {
+      font-size: 24px;
+      @include f500;
+      line-height: 24px;
+      color: #444444;
+      border-bottom: 1px solid #dcdcdc;
+      padding: 25px 30px;
+   }
+
+   &__inner {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 70px 0px 100px;
+      background-color: #8bc34a;
+   }
+
+   &__mistake {
+      width: 695px;
+      font-size: 300px;
+      font-family: "Open Sans", sans-serif;
+      font-weight: 800;
+      color: #fffefe;
+      line-height: 300px;
+      margin: 0 auto;
+      position: relative;
+
+      &::after {
+         content: "";
+         position: absolute;
+         background-image: url("../images/page-404/page404-images.png");
+         width: 157px;
+         height: 301px;
+         top: -5px;
+         right: 0;
+      }
+   }
+
+   &__title {
+      font-size: 30px;
+      font-family: "Open Sans", sans-serif;
+      font-weight: 400;
+      line-height: 60px;
+      letter-spacing: 6px;
+      text-align: center;
+      color: #fff;
+      margin-bottom: 15px;
+   }
+
+   &__text {
+      max-width: 540px;
+      font-size: 18px;
+      font-family: "Raleway", sans-serif !important;
+      font-weight: 500;
+      text-align: center;
+      @include f500;
+      line-height: 24px;
+      color: #fff;
+      margin: 0 auto;
+   }
+
+   &__link {
+      max-width: 210px;
+      width: 100%;
+      font-size: 14px;
+      line-height: 24px;
+      letter-spacing: 1px;
+      font-family: "Raleway", sans-serif;
+      font-weight: 700;
+      text-transform: uppercase;
+      text-align: center;
+      color: #fff;
+      border: 2px solid #fff;
+      border-radius: 5px;
+      padding: 16px 20px;
+      margin-top: 50px;
+      outline: none;
+   }
+}
+
+
+/********************   A B O U T   ********************/
+
+.about {
+   margin-bottom: 145px;
+
+   &__wrapper {
+      background-color: #fff;
+      border: 1px solid #d7d7d7;
+   }
+
+   &__head {
+      font-size: 24px;
+      @include f500;
+      line-height: 24px;
+      color: $bg;
+      border-bottom: 1px solid #d7d7d7;
+      padding: 22px 35px;
+   }
+
+   &__inner {
+      padding: 40px 50px 45px;
+   }
+
+   &__box {
+      h3 {
+         font-size: 20px;
+         @include f700;
+         line-height: 24px;
+         color: #444444;
+         margin-bottom: 15px;
+      }
+
+      p {
+         font-size: 15px;
+         line-height: 24px;
+         color: #707070;
+         margin-bottom: 40px;
+
+         &:last-child {
+            margin-bottom: 0;
+         }
+      }
+   }
+}
+
+
+
 
 
 

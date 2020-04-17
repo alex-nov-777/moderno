@@ -99,14 +99,14 @@ body {
             font-size: 15px;
             display: inline-block;
             position: relative;
-            padding-left: 24px;
+            padding-right: 24px;
             
             & + li {
 
-               &::before {
+               &::after {
                   content: "-";
                   position: absolute;
-                  left: 8px;
+                  left: -17px;
                   color: $green;
                } 
             }
