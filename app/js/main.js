@@ -43,6 +43,8 @@ $(function(){
       return false;
    });
 
+   $('input[type="file"], select').styler();
+
    $(".header__menu-burger").click(function (event) {
       $(".header__menu-burger,.menu__list").toggleClass("active");
       $("body").toggleClass("lock");
