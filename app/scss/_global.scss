@@ -21,6 +21,12 @@ a {
    color: $text;
 }
 
+html,
+body {
+   overflow-x: hidden;
+   position: relative;
+}
+
 ul,
 li {
    margin: 0;
@@ -91,12 +97,15 @@ body {
 
 		&__inner {
          padding: 45px 0px 40px;
+         overflow: hidden;
+         width: 1200px;
 		}
 
 		&__list {
          
          li {
             font-size: 15px;
+            line-height: 25px;
             display: inline-block;
             position: relative;
             padding-right: 24px;
@@ -140,4 +149,8 @@ body {
          top: -3px;
          left: 0;
       }
+}
+
+#modal {
+   display: none;
 }
