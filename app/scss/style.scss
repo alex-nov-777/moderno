@@ -531,7 +531,6 @@
 
 /********************   H E A D E R __ M E N U - B U R G E R   ********************/
 
-
 .header__menu-burger {
 
    span {
@@ -570,7 +569,7 @@
 }
 
 .header__menu-burger.active span {
-   transform: scale(0);
+   transform: scaleX(0);
 }
 
 .header__menu-burger.active:after {
@@ -661,6 +660,15 @@
 .products {
    background-color: $grey;
    padding: 110px 0px;
+
+   .products__item-img {
+      max-width: 442px;
+      min-height: 250px;
+      display: block;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+   }
    
    &__wrapper {
       max-width: 1920px;
@@ -835,6 +843,15 @@
    &__wrapper {
       max-width: 1920px;
       margin: 0 auto;
+   }
+
+   .products__item-img {
+      max-width: 442px;
+      min-height: 250px;
+      display: block;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
    }
 
    .slick-dots {
@@ -2968,7 +2985,6 @@
       }
    }
 }
-
 
 /********************   U P L O A D   ********************/
 

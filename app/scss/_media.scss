@@ -9,14 +9,25 @@
 }
 
 
+@media (max-width: 1800px) {
+
+}
+
 
 @media (max-width: 1440px) {
    .product-slider__inner {
 
       .products__item {
-         max-width: 560px;
+         max-width: 442px;
       }
    }
+
+   .products {
+
+      .products__item-img {
+         max-width: 100%;
+      }
+   } 
 }
 
 
@@ -140,6 +151,11 @@
    .advantages__item {
       max-width: 100%;
       margin-bottom: 30px;
+   }
+
+   .advantages__item-text {
+      max-width: 360px;
+      margin: 0 auto;
    }
 
    .advantages__inner {
@@ -293,6 +309,10 @@
    .product-slider__inner {
 
       .products__item {
+         max-width: 100%;
+      }
+
+      .products__item-img {
          max-width: 100%;
       }
    }
@@ -815,7 +835,7 @@
       z-index: 2;
 
       &.active{
-         left: 68px;
+         left: 67px;
          right: 90px;
       }
    }
