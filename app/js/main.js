@@ -15,17 +15,24 @@ $(function(){
          {
             breakpoint: 1900,
             settings: {
-               slidesToShow: 3,
-               slidesToScroll: 3,
+               slidesToShow: 4,
+               slidesToScroll: 4,
                infinite: true,
                dots: true
+            }
+         },
+         {
+            breakpoint: 1851,
+            settings: {
+               slidesToShow: 3,
+               slidesToScroll: 3
             }
          },
          {
             breakpoint: 1441,
             settings: {
                slidesToShow: 2,
-               slidesToScroll: 1
+               slidesToScroll: 2
             }
          },
          {
